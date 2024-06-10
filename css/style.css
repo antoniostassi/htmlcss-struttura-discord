@@ -9,3 +9,109 @@
 html{
     font-family:Arial, Helvetica, sans-serif;
 }
+
+/* General */
+
+.flex-property{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.perc25{
+    width:25%;
+}
+
+.perc50{
+    width:50%;
+}
+
+.perc70{
+    width:70%;
+}
+
+.perc30{
+    width:30%;
+}
+
+/* Header */
+
+header {
+    min-height:100px;
+}
+
+header > nav {
+    width:70%;
+    margin:auto;
+    min-height:50px;
+}
+
+.logo, .navbar, .login-section {
+    padding:10px 10px;
+}
+
+.navbar {
+    text-align:center;
+}
+
+.login-section {
+    text-align:right;
+}
+
+main > section {
+    padding: 40px;
+}
+
+main > section > .big-frame {
+    width:60%;
+    margin:auto;
+    min-height:500px;
+}
+
+main > section > div.flex-property {
+    width:80%;
+    margin:auto;
+}
+
+/* Debugging */
+
+.debug > header {
+    background-color: #ADD8E6;
+}
+
+.debug > header > nav {
+    background-color: #DAA520;
+    border: 2px dashed black;
+}
+
+.debug .logo, 
+.debug .navbar, 
+.debug .login-section {
+    border: 5px dashed red;
+}
+
+.debug > main > section:first-child {
+    background-color:#00008B;
+}
+
+.debug > main > section > .big-frame {
+    background-color: #EE82EE;
+    border:2px dashed black;
+}
+
+.debug > main > section > div.flex-property > .perc70{
+    background-color: #1E90FF;
+    border: 1px dashed red;   
+}
+.debug > main > section > div.flex-property > .perc30{
+    background-color: #FBBDC8;
+    border: 1px dashed red;
+    min-height:400px;
+}
+
+.debug > main > section > div.flex-property {
+    border:1px dashed purple;
+}
+
+.debug > main > section:nth-of-type(2n+3) {
+    background-color:gray;
+}
