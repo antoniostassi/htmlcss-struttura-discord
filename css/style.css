@@ -63,15 +63,16 @@ header > nav {
     text-align:right;
 }
 
+/* Main */
 main > section {
-    padding: 40px;
+    padding: 30px;
 }
 
-main > section > .big-frame {
-    width:60%;
+main > section > .frame60-50,
+main > section > .frame80-60 {
     margin:auto;
-    min-height:500px;
 }
+
 
 main > section > div.flex-property {
     width:80%;
@@ -99,9 +100,18 @@ main > section > div.flex-property {
     background-color:#00008B;
 }
 
-.debug > main > section > .big-frame {
+.debug > main > section > .frame60-50 {
     background-color: #EE82EE;
     border:2px dashed black;
+    width:60%;
+    min-height:500px;
+}
+
+.debug > main > section > .frame80-60{
+    background-color: #EE82EE;
+    border:2px dashed black;
+    width:80%;
+    min-height:600px;
 }
 
 .debug > main > section > div.flex-property > .perc60{
@@ -121,3 +131,4 @@ main > section > div.flex-property {
 .debug > main > section:nth-of-type(2n+3) {
     background-color:gray;
 }
+
