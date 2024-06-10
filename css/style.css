@@ -97,9 +97,10 @@ footer > section {
 }
 
 footer > section > div.flex-property {
+    justify-content: space-between;
     width:80%;
     margin:auto;
-    border:2px dashed white;
+    padding:15px 0;
 }
 
 /* Debugging */
@@ -178,7 +179,13 @@ footer > section > div.flex-property {
     background-color: #23272A;
 }
 
-.debug.true footer > div > section {
-   background-color:#7FFFD4;
-   border: 1px dashed white;
+.debug.true footer > section > div.flex-property {
+    background-color:#7FFFD4;
 }
+
+.debug.true footer > section > div.flex-property > div {
+    background-color:#FFB7C2;
+    padding:5px;
+    border:2px dashed black;
+}
+
