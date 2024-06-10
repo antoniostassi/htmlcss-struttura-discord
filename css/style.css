@@ -90,6 +90,8 @@ main > section:last-of-type{
     padding-bottom:30px;
 }
 
+/* Footer */
+
 /* Debugging */
 
 .debug.true > header {
@@ -156,4 +158,12 @@ main > section:last-of-type{
 
 .debug.true > main > section:nth-of-type(2n+3) {
     background-color:gray;
+}
+
+.debug.true > main > section:last-of-type {
+    background-color: #23272A;
+}
+
+.debug.true footer {
+    background-color: #23272A;
 }
