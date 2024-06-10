@@ -21,16 +21,22 @@ html{
     width:25%;
 }
 
+.perc40{
+    width:40%;
+}
+
 .perc50{
     width:50%;
 }
 
-.perc70{
-    width:70%;
+.perc60{
+    width:60%;
 }
 
-.perc30{
-    width:30%;
+
+
+.row-reverse-property {
+    flex-direction:row-reverse;
 }
 
 /* Header */
@@ -98,11 +104,11 @@ main > section > div.flex-property {
     border:2px dashed black;
 }
 
-.debug > main > section > div.flex-property > .perc70{
+.debug > main > section > div.flex-property > .perc60{
     background-color: #1E90FF;
     border: 1px dashed red;   
 }
-.debug > main > section > div.flex-property > .perc30{
+.debug > main > section > div.flex-property > .perc40{
     background-color: #FBBDC8;
     border: 1px dashed red;
     min-height:400px;
