@@ -70,7 +70,7 @@ header > nav {
 }
 
 /* Main */
-main > section {
+main > section{
     padding: 30px;
 }
 
@@ -91,6 +91,16 @@ main > section:last-of-type{
 }
 
 /* Footer */
+
+footer > section {
+    padding:30px;
+}
+
+footer > section > div.flex-property {
+    width:80%;
+    margin:auto;
+    border:2px dashed white;
+}
 
 /* Debugging */
 
@@ -166,4 +176,9 @@ main > section:last-of-type{
 
 .debug.true footer {
     background-color: #23272A;
+}
+
+.debug.true footer > div > section {
+   background-color:#7FFFD4;
+   border: 1px dashed white;
 }
