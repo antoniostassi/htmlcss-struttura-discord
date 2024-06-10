@@ -21,6 +21,10 @@ html{
     width:25%;
 }
 
+.perc30{
+    width:30%;
+}
+
 .perc40{
     width:40%;
 }
@@ -33,7 +37,9 @@ html{
     width:60%;
 }
 
-
+.perc70{
+    width:70%;
+}
 
 .row-reverse-property {
     flex-direction:row-reverse;
@@ -79,56 +85,75 @@ main > section > div.flex-property {
     margin:auto;
 }
 
+main > section:last-of-type{
+    padding-top:10px;
+    padding-bottom:30px;
+}
+
 /* Debugging */
 
-.debug > header {
+.debug.true > header {
     background-color: #ADD8E6;
 }
 
-.debug > header > nav {
+.debug.true > header > nav {
     background-color: #DAA520;
     border: 2px dashed black;
 }
 
-.debug .logo, 
-.debug .navbar, 
-.debug .login-section {
+.debug.true .logo, 
+.debug.true .navbar, 
+.debug.true .login-section {
     border: 5px dashed red;
 }
 
-.debug > main > section:first-child {
+.debug.true > main > section:first-child {
     background-color:#00008B;
 }
 
-.debug > main > section > .frame60-50 {
+.debug.true > main > section > .frame60-50 {
     background-color: #EE82EE;
     border:2px dashed black;
     width:60%;
     min-height:500px;
 }
 
-.debug > main > section > .frame80-60{
+.debug.true > main > section > .frame80-60{
     background-color: #EE82EE;
     border:2px dashed black;
     width:80%;
     min-height:600px;
 }
 
-.debug > main > section > div.flex-property > .perc60{
-    background-color: #1E90FF;
-    border: 1px dashed red;   
-}
-.debug > main > section > div.flex-property > .perc40{
-    background-color: #FBBDC8;
-    border: 1px dashed red;
-    min-height:400px;
-}
-
-.debug > main > section > div.flex-property {
+.debug.true > main > section > div.flex-property {
     border:1px dashed purple;
 }
 
-.debug > main > section:nth-of-type(2n+3) {
-    background-color:gray;
+.debug.true > main > section > div.flex-property > .perc30{
+    background-color: #F08080;
+    border: 2px dashed black;
 }
 
+.debug.true > main > section > div.flex-property > .perc40{
+    background-color: #FBBDC8;
+    border: 2px dashed black;
+    min-height:400px;
+}
+
+.debug.true > main > section > div.flex-property > .perc60{
+    background-color: #1E90FF; 
+    border: 2px dashed black;
+}
+
+.debug.true > main > section > div.flex-property > .perc70{
+    background-color: #20B2AA;
+    min-height:350px;
+}
+
+.debug.true > main > section > div.flex-property > .perc70.flex-property > .perc25{
+    border: 2px dashed white;   
+}
+
+.debug.true > main > section:nth-of-type(2n+3) {
+    background-color:gray;
+}
